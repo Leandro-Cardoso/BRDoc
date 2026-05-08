@@ -15,8 +15,18 @@ std::string RG::normalize(const std::string& input) {
     result.reserve(input.size());
 
     for (char c : input) {
-        if (std::isalnum(static_cast<unsigned char>(c))) {
-            result.push_back(std::toupper(static_cast<unsigned char>(c)));
+        unsigned char uc = static_cast<unsigned char>(c);
+
+        if (std::isalnum(uc)) {
+            result.push_back(
+                static_cast<char>(std::toupper(uc))
+            );
+        }
+        else if (c == '.' || c == '-' || c == ' ') {
+            continue;
+        }
+        else {
+            throw std::invalid_argument("Invalid RG character");
         }
     }
 
