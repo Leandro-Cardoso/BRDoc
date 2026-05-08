@@ -246,4 +246,4 @@ Cobertura atual:
 
 # 📄 Licença
 
-MIT License
+[MIT License](https://github.com/Leandro-Cardoso/BRDoc/blob/main/LICENSE)
