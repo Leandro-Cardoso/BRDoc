@@ -2,7 +2,7 @@
 
 Biblioteca C++ para validação, normalização e formatação de documentos brasileiros.
 
-## ✨ Funcionalidades
+## ✨ Features
 
 - CPF
   - Validação
@@ -22,9 +22,7 @@ Biblioteca C++ para validação, normalização e formatação de documentos bra
 
 - Testes automatizados com Google Test
 
----
-
-# 📁 Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```text
 brdoc/
@@ -58,63 +56,58 @@ brdoc/
 │   └── validators_example.cpp
 │
 ├── CMakeLists.txt
-├── README.md
 ├── .gitignore
+├── README.md
 └── LICENSE
 ```
 
----
+## ⚙️ Requisitos
 
-# ⚙️ Requisitos
-
-- C++20+
+- C++ 20+
 - CMake 3.20+
 - Compiladores compatíveis:
-  - GCC
-  - Clang
-  - MSVC
+    - GCC
+    - Clang
+    - MSVC
 
----
+## 🚀 Build
 
-# 🚀 Build
-
-### Clone o projeto
+1. Clone
 
 ```bash
-git clone https://github.com/seuusuario/brdoc.git
+git clone https://github.com/Leandro-Cardoso/brdoc/
 cd brdoc
 ```
 
----
-
-### Gerar build
+2. Configuração
 
 ```bash
 cmake -S . -B build -G "MinGW Makefiles"
+```
+
+3. Gerar build
+
+```bash
 cmake --build build
 ```
 
----
+## ▶️ Executar exemplos
 
-# ▶️ Executar exemplos
-
-### Windows
+#### Windows
 
 ```bash
 cd build
 .\cpf_example.exe
 ```
 
-### Linux
+#### Linux
 
 ```bash
 cd build
 ./cpf_example
 ```
 
----
-
-# 🧪 Executar testes
+## 🧪 Executar testes
 
 ```bash
 cd build
@@ -128,11 +121,9 @@ cd build
 .\tests.exe
 ```
 
----
+## 📌 Exemplos
 
-# 📌 Exemplos
-
-### CPF
+#### CPF
 
 ```cpp
 #include <iostream>
@@ -146,9 +137,7 @@ int main() {
 }
 ```
 
----
-
-### CNPJ
+#### CNPJ
 
 ```cpp
 #include <iostream>
@@ -162,9 +151,7 @@ int main() {
 }
 ```
 
----
-
-### RG
+#### RG
 
 ```cpp
 #include <iostream>
@@ -178,9 +165,7 @@ int main() {
 }
 ```
 
----
-
-# 🧠 Design
+## 🧠 Design
 
 A biblioteca utiliza:
 
@@ -190,9 +175,7 @@ A biblioteca utiliza:
 - Fail-fast validation
 - Separação entre domínio e validação
 
----
-
-# 📚 Classes
+## 📚 Classes
 
 | Classe | Descrição |
 |---|---|
@@ -202,25 +185,23 @@ A biblioteca utiliza:
 | `RG` | Documento RG |
 | `Validators` | Funções auxiliares |
 
----
+## 🔒 Validação
 
-# 🔒 Validação
-
-### CPF
+#### CPF
 
 - Remove máscara
 - Verifica tamanho
 - Rejeita sequências repetidas
 - Calcula dígitos verificadores
 
-### CNPJ
+#### CNPJ
 
 - Remove máscara
 - Verifica tamanho
 - Rejeita sequências repetidas
 - Calcula dígitos verificadores
 
-### RG
+#### RG
 
 Validação básica:
 
@@ -228,9 +209,7 @@ Validação básica:
 - tamanho válido
 - suporte alfanumérico
 
----
-
-# 🧪 Testes
+## 🧪 Testes
 
 O projeto utiliza Google Test.
 
@@ -242,8 +221,6 @@ Cobertura atual:
 - CNPJ
 - RG
 
----
-
-# 📄 Licença
+## 📄 Licença
 
 [MIT License](https://github.com/Leandro-Cardoso/BRDoc/blob/main/LICENSE)
